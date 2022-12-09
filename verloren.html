@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verloren!</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://jsgame.bbz.cloud/scripts/v1/keyboard.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.jpg" />
+    <audio id="audio_with_controls" controls autoplay>
+      <source
+        src="sound/laugh.mp3"
+        type="audio/mp3"
+        autostart="true"
+        loop="true"
+        hidden="true"
+        height="0"
+        width="0"
+      />
+    </audio>
+  </head>
+
+  <body>
+    <body background="img/schluss.jpg"></body>
+    <header>
+      <div>
+        <img id="logo" src="img/logo.png" alt="Logo" />
+      </div>
+    </header>
+
+    <section>
+      <p class="schlusstext">
+        HAHAHAHA <br />
+        I win! You lose!!
+      </p>
+      <a href="index.html"> <button class="schlussbutton">Retry</button></a>
+      <img class="schluss" src="img/icy.png" alt="Icy" />
+    </section>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+/* Import Schriftart*/
+@font-face {
+  font-family: "winx";
+  /* Gewünschter Name */
+  src: url("fonts/Winx\ Script.eot");
+  /* für IE9 */
+  src: url("fonts/Winx\ Script.eot") format("embedded-opentype"),
+    /* für IE6-IE8 */
+    url("fonts/Winx-Script.woff") format("woff"),
+    /* für moderne Browser */
+    url("fonts/Winx\ Script.ttf") format("truetype");
+  /* für Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "font2";
+  /* Gewünschter Name */
+  src: url("fonts/Winx\ Script.eot");
+  /* für IE9 */
+  src: url("fonts/Snickles.eot") format("embedded-opentype"),
+    /* für IE6-IE8 */
+    url("fonts/Snickles.woff") format("woff"),
+    /* für moderne Browser */
+    url("fonts/Snickles.ttf") format("truetype");
+  /* für Safari, Android, iOS */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
+
+
+
+/* Design, Hintergrundbild, Spieler und Gegner*/
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: white;
+  margin: 0;
+  background-image: url(img/melody2.jpg);
+  background-size: cover;
+  position: absolute;
+}
+
+.player {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+
+
+/* Gegner Objkte und Gegnerin Icy*/
+.eiszapfen {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+}
+
+.enemy {
+  position: absolute;
+  position: relative;
+  float: right;
+  margin-top: 135px;
+}
+
+img.icy-play {
+  width: 250px;
+  float: right;
+  z-index: 1000;
+}
+
+
+/*(In dem Fall Noten) Zum Sammeln */
+.blume {
+  position: absolute;
+  width: 4%;
+}
+
+
+/* Punkte */
+p.punkte {
+  font-family: "font2", Arial, sans-serif;
+  text-align: center;
+  color: #fd1d55;
+  font-size: 60px;
+
+}
+
+.point_container {
+  display: flex;
+  justify-content: center;
+  padding: 3vh 5vw 0vh 5vw;
+}
+
+.point_container ::before {
+  content: "Score: ";
+}
